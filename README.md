@@ -53,11 +53,11 @@ Tips presentasi: buka dua tab, satu masuk sebagai mitra dan satu sebagai pembeli
 2. Buka **SQL Editor → New query**, tempel isi `supabase/schema.sql`, lalu **Run**. File ini membuat tabel, Row Level Security, fungsi pemesanan atomik, bucket foto, dan realtime.
 3. (Opsional) Jalankan `supabase/seed.sql` untuk 6 toko contoh dengan stok aktif.
 4. **Authentication → Sign In / Providers → Email**: untuk uji coba, matikan *Confirm email* supaya akun baru langsung bisa masuk.
-5. **Project Settings → API**: salin *Project URL* dan *anon public key*.
+5. Klik tombol **Connect** di bagian atas dashboard project untuk menyalin *Project URL* dan *publishable key* (`sb_publishable_...`). Bisa juga lewat **Settings → API Keys**. Key lama `anon` (`eyJ...`) juga masih bisa dipakai.
 6. Salin `.env.example` menjadi `.env`, isi:
    ```
    VITE_SUPABASE_URL=https://xxxx.supabase.co
-   VITE_SUPABASE_ANON_KEY=eyJhbGciOi...
+   VITE_SUPABASE_ANON_KEY=sb_publishable_...
    ```
 7. Jalankan ulang `npm run dev`. Halaman Akun akan menampilkan “Terhubung ke database Supabase”.
 
